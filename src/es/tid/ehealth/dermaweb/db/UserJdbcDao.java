@@ -3,7 +3,7 @@ package es.tid.ehealth.dermaweb.db;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.tid.ehealth.dermaweb.domain.User;
+import es.tid.ehealth.dermaweb.bean.User;
 
 
 public class UserJdbcDao {

@@ -9,20 +9,6 @@
     <!-- the parent application context definition for the springapp application -->
      
     <bean id="userManager" class="es.tid.ehealth.dermaweb.service.UserDBManager">
-
     </bean>
-
-
-    <!--<bean name="/login.htm" class="...">
-        <property name="sessionForm" value="true"/>
-        <property name="commandName" value="priceIncrease"/>
-        <property name="commandClass" value="springapp.service.PriceIncrease"/>
-        <property name="validator">
-            <bean class="es.tid.ehealth.service.LoginValidator"/>
-        </property>
-        <property name="formView" value="login"/>
-        <property name="successView" value="hello.htm"/>
-        <property name="loginManager" ref="loginManager"/>
-    </bean> -->
     
 </beans>

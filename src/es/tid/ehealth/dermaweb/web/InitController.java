@@ -15,7 +15,7 @@ import org.springframework.web.servlet.mvc.Controller;
 
 import es.tid.ehealth.dermaweb.service.UserManager;
 
-public class InitController  implements Controller { 
+public class InitController  implements Controller {
 
 	protected final Log log = LogFactory.getLog(getClass());
 	

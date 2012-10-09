@@ -5,8 +5,8 @@ import java.util.List;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import es.tid.ehealth.dermaweb.bean.User;
 import es.tid.ehealth.dermaweb.db.UserDao;
-import es.tid.ehealth.dermaweb.domain.User;
 
 
 public class UserDBManager implements UserManager {
