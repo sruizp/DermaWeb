@@ -11,26 +11,26 @@
         <property name="basename" value="messages"/>
     </bean>
     
-    <bean name="/hello.htm" class="es.tid.ehealth.dermaweb.web.InitController">
-        <property name="userManager" ref="userManager"/>
-    </bean>
-    
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
         <property name="prefix" value="/WEB-INF/jsp/"></property>
         <property name="suffix" value=".jsp"></property>        
     </bean>
-
-    <!--<bean name="/login.htm" class="...">
+    
+    <bean name="/hello.htm" class="es.tid.ehealth.dermaweb.web.InitController">
+        <property name="userManager" ref="userManager"/>
+    </bean>
+    
+    <bean name="/login.htm" class="es.tid.ehealth.dermaweb.web.LoginController">
         <property name="sessionForm" value="true"/>
-        <property name="commandName" value="priceIncrease"/>
-        <property name="commandClass" value="springapp.service.PriceIncrease"/>
+        <property name="commandName" value="login"/>
+        <property name="commandClass" value="es.tid.ehealth.dermaweb.service.Login"/>
         <property name="validator">
-            <bean class="es.tid.ehealth.service.LoginValidator"/>
+            <bean class="es.tid.ehealth.dermaweb.service.LoginValidator"/>
         </property>
         <property name="formView" value="login"/>
         <property name="successView" value="hello.htm"/>
-        <property name="loginManager" ref="loginManager"/>
-    </bean> -->
+        <property name="userManager" ref="userManager"/>
+    </bean>
     
 </beans>
