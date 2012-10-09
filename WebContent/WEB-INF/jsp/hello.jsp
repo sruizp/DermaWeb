@@ -1,7 +1,7 @@
 <%@ include file="/WEB-INF/jsp/include.jsp" %>
 
 <html>
-  <head><title>Teledermatología</title></head>
+  <head><title>Teledermatologíaaaaa</title></head>
   <body> 
   	<br>
  	<h2>&nbsp;LISTA DE USUARIOS</h2>
