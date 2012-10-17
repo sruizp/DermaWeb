@@ -3,7 +3,7 @@
 
 <html>
 <head>
-  <title>Teledermatología</title>
+  <title>Teledermatologia</title>
   <style>
     .error { color: red; }
   </style>  
@@ -13,7 +13,7 @@
 <br>
 <h2>&nbsp;Identifícate</h2>
 
-<form:form method="post" commandName="login">
+<form:form method="post" commandName="loginForm">
   <table width="95%" bgcolor="f8f8ff" border="0" cellspacing="0" cellpadding="5">
     <tr>
       <td align="right" width="20%">Usuario:</td>

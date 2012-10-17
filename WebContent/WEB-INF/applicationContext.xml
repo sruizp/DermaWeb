@@ -5,10 +5,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-
-    <!-- the parent application context definition for the springapp application -->
+    <!-- the parent application context definition for the dermaweb application -->
      
-    <bean id="userManager" class="es.tid.ehealth.dermaweb.service.UserDBManager">
+    <bean id="userManager" class="com.tdigital.dermaweb.service.UserDBManager">
     </bean>
     
 </beans>
