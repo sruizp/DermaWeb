@@ -1,3 +1,7 @@
-<%@ include file="/WEB-INF/jsp/include.jsp" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page pageEncoding="UTF-8"%>
 
-<c:redirect url="/hello.htm"/>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<c:redirect url="/login.htm"/>

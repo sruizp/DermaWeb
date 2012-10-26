@@ -68,6 +68,7 @@ public class LoginController {
         Iterator iter = users.iterator();
         while (iter.hasNext() && !userFound) {
         	User userAux = (User)iter.next();
+        	logger.info("User: "+userAux);
         	
         	if (userAux.getUser().equals(sUser)) {
         		userFound = true;
@@ -79,19 +80,17 @@ public class LoginController {
         	}
         }
         
-        if (userFound) {
-        	
+        if (userFound) {   	
         	if (passOk) {
 	        	logger.info("Returning from LoginController view to login.htm" );
-	        	return "redirect:/hello.htm";
+	        	return "redirect:/init.htm";
         	}
         	else {
             	myModel.put("loginError", "Password incorrecta");
             	logger.info("Login ERROR (Password).....");
             	return "login";
         	}
-        }
-        
+        }     
         
         else {
         	myModel.put("loginError", "Usuario no encontrado");
@@ -104,8 +103,8 @@ public class LoginController {
     protected LoginForm formBackingObject(HttpServletRequest request) throws ServletException {
         logger.info("FormBacking...");
     	LoginForm login = new LoginForm();
-        login.setUser("Inserta usuario");
-        login.setPassword("Inserta contraseña");
+        login.setUser("administrador");
+        login.setPassword("1qaz1");
         return login;
     }
     

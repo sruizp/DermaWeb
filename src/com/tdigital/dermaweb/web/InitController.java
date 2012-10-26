@@ -26,7 +26,7 @@ public class InitController {
 	@Autowired
 	private UserManager userManager;
 	
-    @RequestMapping(value="/hello.htm")
+    @RequestMapping(value="/init.htm")
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
 	        throws ServletException, IOException {
 	
@@ -35,6 +35,8 @@ public class InitController {
 	    
         Map<String, Object> myModel = new HashMap<String, Object>();
         myModel.put("users", this.userManager.getUsers());
+        
+        //Set session with the user
 	    
         return new ModelAndView("hello", "model", myModel);
 	}
